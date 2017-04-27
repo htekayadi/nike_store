@@ -14,6 +14,7 @@
 		27201CE61EB16FB200E07342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27201CE41EB16FB200E07342 /* LaunchScreen.storyboard */; };
 		27201CF11EB16FB200E07342 /* NikeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27201CF01EB16FB200E07342 /* NikeStoreTests.swift */; };
 		27201CFC1EB16FB200E07342 /* NikeStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27201CFB1EB16FB200E07342 /* NikeStoreUITests.swift */; };
+		27201D0A1EB16FEE00E07342 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 27201D091EB16FEE00E07342 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		27201CF71EB16FB200E07342 /* NikeStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27201CFB1EB16FB200E07342 /* NikeStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeStoreUITests.swift; sourceTree = "<group>"; };
 		27201CFD1EB16FB200E07342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27201D091EB16FEE00E07342 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		27201CCF1EB16FB200E07342 = {
 			isa = PBXGroup;
 			children = (
+				27201D091EB16FEE00E07342 /* .gitignore */,
 				27201CDA1EB16FB200E07342 /* NikeStore */,
 				27201CEF1EB16FB200E07342 /* NikeStoreTests */,
 				27201CFA1EB16FB200E07342 /* NikeStoreUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27201D0A1EB16FEE00E07342 /* .gitignore in Resources */,
 				27201CE61EB16FB200E07342 /* LaunchScreen.storyboard in Resources */,
 				27201CE31EB16FB200E07342 /* Assets.xcassets in Resources */,
 				27201CE11EB16FB200E07342 /* Main.storyboard in Resources */,
