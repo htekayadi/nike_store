@@ -333,7 +333,7 @@
         <!--CHECKOUT-->
         <scene sceneID="d2u-2U-WWx">
             <objects>
-                <tableViewController id="hHT-Xx-weQ" sceneMemberID="viewController">
+                <tableViewController id="hHT-Xx-weQ" customClass="CheckoutTableViewController" customModule="NikeStore" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="bjB-G1-5Hd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
