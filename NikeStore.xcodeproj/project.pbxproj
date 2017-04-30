@@ -170,7 +170,6 @@
 			children = (
 				27CEEAF01EB608A400BD57D5 /* ShoeDetailTableViewController.swift */,
 				27CEEB081EB60EA300BD57D5 /* ShoeImageViewController.swift */,
-				27CEEB1A1EB64AA800BD57D5 /* ShoeImagesHeaderView.swift */,
 				27CEEB181EB6408500BD57D5 /* ShoeImagesPageViewController.swift */,
 			);
 			name = Detail;
@@ -205,6 +204,7 @@
 		27CEEB031EB60D9A00BD57D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				27CEEB1A1EB64AA800BD57D5 /* ShoeImagesHeaderView.swift */,
 				27CEEB0E1EB61E8900BD57D5 /* ShoeDetailCell.swift */,
 				27CEEB101EB61ECD00BD57D5 /* SuggestionTableViewCell.swift */,
 				27CEEB161EB6204200BD57D5 /* SuggestionCollectionViewCell.swift */,

@@ -26,7 +26,7 @@ class ShoeImagesPageViewController: UIPageViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         var controllers = [UIViewController]()
- 
+        
         if let images = self.images {
             for image in images {
                 let shoeImageVC = storyboard.instantiateViewController(withIdentifier: Storyboard.shoeImageViewController)
@@ -49,8 +49,7 @@ class ShoeImagesPageViewController: UIPageViewController {
         self.turnToPage(index: 0)
     }
     
-    func turnToPage(index: Int)
-    {
+    func turnToPage(index: Int) {
         let controller = controllers[index]
         var direction = UIPageViewControllerNavigationDirection.forward
         
@@ -66,8 +65,7 @@ class ShoeImagesPageViewController: UIPageViewController {
         setViewControllers([controller], direction: direction, animated: true, completion: nil)
     }
     
-    func configureDisplaying(viewController: UIViewController)
-    {
+    func configureDisplaying(viewController: UIViewController) {
         for (index, vc) in controllers.enumerated() {
             if viewController === vc {
                 if let shoeImageVC = viewController as? ShoeImageViewController {
@@ -115,5 +113,8 @@ extension ShoeImagesPageViewController: UIPageViewControllerDelegate {
         }
     }
 }
+
+
+
 
 
