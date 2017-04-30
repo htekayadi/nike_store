@@ -906,10 +906,10 @@
             </objects>
             <point key="canvasLocation" x="2374" y="-1168"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Shoe Images Page View Controller-->
         <scene sceneID="91s-8R-Sqm">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="7Bu-O0-zIA" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="7Bu-O0-zIA" customClass="ShoeImagesPageViewController" customModule="NikeStore" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8a-un-15D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3156" y="-1320"/>
@@ -917,7 +917,7 @@
         <!--Shoe Image View Controller-->
         <scene sceneID="Kr4-YA-zQ2">
             <objects>
-                <viewController id="4tv-IB-vUm" customClass="ShoeImageViewController" customModule="NikeStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShoeImageViewController" id="4tv-IB-vUm" customClass="ShoeImageViewController" customModule="NikeStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eB4-7f-vFY"/>
                         <viewControllerLayoutGuide type="bottom" id="7BQ-Wr-pG7"/>
@@ -926,7 +926,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t1" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-49-dyG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t1" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-49-dyG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                             </imageView>
