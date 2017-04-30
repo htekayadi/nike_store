@@ -15,6 +15,7 @@
 		27201CF11EB16FB200E07342 /* NikeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27201CF01EB16FB200E07342 /* NikeStoreTests.swift */; };
 		27201CFC1EB16FB200E07342 /* NikeStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27201CFB1EB16FB200E07342 /* NikeStoreUITests.swift */; };
 		27201D0A1EB16FEE00E07342 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 27201D091EB16FEE00E07342 /* .gitignore */; };
+		27CEEAF11EB608A400BD57D5 /* ShoeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEAF01EB608A400BD57D5 /* ShoeDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		27201CFB1EB16FB200E07342 /* NikeStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeStoreUITests.swift; sourceTree = "<group>"; };
 		27201CFD1EB16FB200E07342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27201D091EB16FEE00E07342 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		27CEEAF01EB608A400BD57D5 /* ShoeDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				27201CE21EB16FB200E07342 /* Assets.xcassets */,
 				27201CE41EB16FB200E07342 /* LaunchScreen.storyboard */,
 				27201CE71EB16FB200E07342 /* Info.plist */,
+				27CEEAF21EB608BE00BD57D5 /* Controller */,
 			);
 			path = NikeStore;
 			sourceTree = "<group>";
@@ -126,6 +129,22 @@
 				27201CFD1EB16FB200E07342 /* Info.plist */,
 			);
 			path = NikeStoreUITests;
+			sourceTree = "<group>";
+		};
+		27CEEAF21EB608BE00BD57D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27CEEAF31EB608D300BD57D5 /* Detail */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		27CEEAF31EB608D300BD57D5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				27CEEAF01EB608A400BD57D5 /* ShoeDetailTableViewController.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CEEAF11EB608A400BD57D5 /* ShoeDetailTableViewController.swift in Sources */,
 				27201CDE1EB16FB200E07342 /* ViewController.swift in Sources */,
 				27201CDC1EB16FB200E07342 /* AppDelegate.swift in Sources */,
 			);
@@ -509,6 +529,7 @@
 				27201D021EB16FB200E07342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27201D031EB16FB200E07342 /* Build configuration list for PBXNativeTarget "NikeStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +538,7 @@
 				27201D051EB16FB200E07342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27201D061EB16FB200E07342 /* Build configuration list for PBXNativeTarget "NikeStoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +547,7 @@
 				27201D081EB16FB200E07342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
