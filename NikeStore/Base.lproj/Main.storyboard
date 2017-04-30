@@ -731,13 +731,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="pIF-FN-myf">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="qIu-0R-DjX" customClass="ShoeImagesHeaderView" customModule="NikeStore" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xtn-h6-A1t">
+                                    <rect key="frame" x="168" y="338" width="39" height="37"/>
+                                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </pageControl>
+                                <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pg5-qZ-cg0">
+                                    <rect key="frame" x="0.0" y="-135" width="375" height="375"/>
+                                </containerView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Xtn-h6-A1t" secondAttribute="bottom" id="M3s-zH-Lmk"/>
+                                <constraint firstAttribute="trailing" secondItem="Pg5-qZ-cg0" secondAttribute="trailing" id="MPP-gk-93T"/>
+                                <constraint firstItem="Xtn-h6-A1t" firstAttribute="centerX" secondItem="qIu-0R-DjX" secondAttribute="centerX" id="YvM-il-B1c"/>
+                                <constraint firstItem="Pg5-qZ-cg0" firstAttribute="top" secondItem="qIu-0R-DjX" secondAttribute="top" id="nei-yV-PsK"/>
+                                <constraint firstItem="Pg5-qZ-cg0" firstAttribute="leading" secondItem="qIu-0R-DjX" secondAttribute="leading" id="oI0-EF-hVe"/>
+                                <constraint firstAttribute="bottom" secondItem="Pg5-qZ-cg0" secondAttribute="bottom" id="qby-bH-tJz"/>
+                            </constraints>
                             <connections>
-                                <segue destination="7Bu-O0-zIA" kind="embed" id="i2a-dW-B1Q"/>
+                                <outlet property="pageControl" destination="Xtn-h6-A1t" id="BwM-2X-AYv"/>
                             </connections>
-                        </containerView>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoeDetailCell" rowHeight="173" id="RWi-3M-FR5" customClass="ShoeDetailCell" customModule="NikeStore" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="403" width="375" height="173"/>
