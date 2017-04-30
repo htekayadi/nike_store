@@ -71,7 +71,7 @@
         <!--SHOPPING BAG-->
         <scene sceneID="m7D-BH-QFx">
             <objects>
-                <tableViewController id="FqR-Vl-REq" sceneMemberID="viewController">
+                <tableViewController id="FqR-Vl-REq" customClass="ShoppingBagTableViewController" customModule="NikeStore" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="6dY-1H-zUI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -658,7 +658,7 @@
         <!--FEED-->
         <scene sceneID="wM9-4E-xX5">
             <objects>
-                <tableViewController id="hbh-nn-4zK" sceneMemberID="viewController">
+                <tableViewController id="hbh-nn-4zK" customClass="FeedTableViewController" customModule="NikeStore" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="444" sectionHeaderHeight="28" sectionFooterHeight="28" id="7YY-u5-W09">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
