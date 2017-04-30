@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -375,7 +376,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" support@ductran.co" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SaJ-8j-ZKC">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" support@help.com" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SaJ-8j-ZKC" userLabel="support@help.com">
                                                     <rect key="frame" x="0.0" y="28.5" width="327" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="Pni-H3-XEE"/>
@@ -646,10 +647,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="hbh-nn-4zK" kind="relationship" relationship="rootViewController" id="3CJ-g7-8Hc"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqz-11-TDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="897" y="-1168"/>
+        </scene>
+        <!--FEED-->
+        <scene sceneID="wM9-4E-xX5">
+            <objects>
+                <tableViewController id="hbh-nn-4zK" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="444" sectionHeaderHeight="28" sectionFooterHeight="28" id="7YY-u5-W09">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedShoeCell" rowHeight="444" id="mv2-zl-SGH" customClass="FeedShoeTableViewCell" customModule="Nike_Research" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="444"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mv2-zl-SGH" id="XKI-1E-b30">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="444"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s1" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-GX-Ywf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Kyu-GX-Ywf" secondAttribute="height" multiplier="1:1" id="VDx-iS-ugs"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NIKE FREE RN FLKNIT 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNK-bT-zU3">
+                                            <rect key="frame" x="8" y="383" width="165" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-DS-YGY">
+                                            <rect key="frame" x="8" y="409" width="31" height="18"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Ud1-DS-YGY" secondAttribute="bottom" constant="16" id="5W2-Ys-kPT"/>
+                                        <constraint firstItem="PNK-bT-zU3" firstAttribute="leading" secondItem="XKI-1E-b30" secondAttribute="leading" constant="8" id="6yy-cs-RUl"/>
+                                        <constraint firstAttribute="trailing" secondItem="Kyu-GX-Ywf" secondAttribute="trailing" id="BLs-EG-gCf"/>
+                                        <constraint firstItem="Kyu-GX-Ywf" firstAttribute="top" secondItem="XKI-1E-b30" secondAttribute="top" id="OdF-iT-7Jw"/>
+                                        <constraint firstItem="Ud1-DS-YGY" firstAttribute="leading" secondItem="XKI-1E-b30" secondAttribute="leading" constant="8" id="TZh-ya-ZZ6"/>
+                                        <constraint firstItem="Ud1-DS-YGY" firstAttribute="top" secondItem="PNK-bT-zU3" secondAttribute="bottom" constant="2" id="VFB-vI-Zro"/>
+                                        <constraint firstItem="Kyu-GX-Ywf" firstAttribute="leading" secondItem="XKI-1E-b30" secondAttribute="leading" id="Yqc-cA-aIX"/>
+                                        <constraint firstItem="PNK-bT-zU3" firstAttribute="top" secondItem="Kyu-GX-Ywf" secondAttribute="bottom" constant="8" id="i4l-g6-OJN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="shoeImageView" destination="Kyu-GX-Ywf" id="vie-cp-HSk"/>
+                                    <outlet property="shoeNameLabel" destination="PNK-bT-zU3" id="NNY-rr-s6R"/>
+                                    <outlet property="shoePriceLabel" destination="Ud1-DS-YGY" id="DUm-6C-Qdk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hbh-nn-4zK" id="Wo0-Im-uQH"/>
+                            <outlet property="delegate" destination="hbh-nn-4zK" id="TZj-GC-g31"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="FEED" id="qkV-XS-9Yt">
+                        <barButtonItem key="backBarButtonItem" title=" " id="FIY-G2-S1P"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2K-ek-UrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1665" y="-1168"/>
         </scene>
     </scenes>
     <resources>
