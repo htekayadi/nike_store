@@ -6,9 +6,9 @@
 //  Copyright © 2017 htekayadi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class FeedTableViewController : UITableViewController {
+class FeedTableViewController: UITableViewController {
     var shoes: [Shoe]?
     
     struct Storyboard {

@@ -18,11 +18,13 @@
 		27CEEAF11EB608A400BD57D5 /* ShoeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEAF01EB608A400BD57D5 /* ShoeDetailTableViewController.swift */; };
 		27CEEAF51EB60A3F00BD57D5 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEAF41EB60A3F00BD57D5 /* CheckoutTableViewController.swift */; };
 		27CEEAFA1EB60AFD00BD57D5 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEAF91EB60AFD00BD57D5 /* Shoe.swift */; };
-		27CEEAFD1EB60BD500BD57D5 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEAFC1EB60BD500BD57D5 /* FeedTableViewController.swift */; };
 		27CEEB001EB60D5100BD57D5 /* ShoppingBagTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEAFF1EB60D5100BD57D5 /* ShoppingBagTableViewController.swift */; };
 		27CEEB021EB60D8E00BD57D5 /* ShoeDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEB011EB60D8E00BD57D5 /* ShoeDetailCell.swift */; };
 		27CEEB051EB60E0300BD57D5 /* SuggestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEB041EB60E0300BD57D5 /* SuggestionCollectionViewCell.swift */; };
 		27CEEB071EB60E1900BD57D5 /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEB061EB60E1900BD57D5 /* SuggestionTableViewCell.swift */; };
+		27CEEB091EB60EA300BD57D5 /* ShoeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEB081EB60EA300BD57D5 /* ShoeImageViewController.swift */; };
+		27CEEB0B1EB60F2D00BD57D5 /* FeedShoeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEB0A1EB60F2D00BD57D5 /* FeedShoeTableViewCell.swift */; };
+		27CEEB0D1EB61CB200BD57D5 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEEB0C1EB61CB200BD57D5 /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +62,13 @@
 		27CEEAF01EB608A400BD57D5 /* ShoeDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailTableViewController.swift; sourceTree = "<group>"; };
 		27CEEAF41EB60A3F00BD57D5 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
 		27CEEAF91EB60AFD00BD57D5 /* Shoe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
-		27CEEAFC1EB60BD500BD57D5 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		27CEEAFF1EB60D5100BD57D5 /* ShoppingBagTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingBagTableViewController.swift; sourceTree = "<group>"; };
 		27CEEB011EB60D8E00BD57D5 /* ShoeDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailCell.swift; sourceTree = "<group>"; };
 		27CEEB041EB60E0300BD57D5 /* SuggestionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionCollectionViewCell.swift; sourceTree = "<group>"; };
 		27CEEB061EB60E1900BD57D5 /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
+		27CEEB081EB60EA300BD57D5 /* ShoeImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeImageViewController.swift; sourceTree = "<group>"; };
+		27CEEB0A1EB60F2D00BD57D5 /* FeedShoeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedShoeTableViewCell.swift; sourceTree = "<group>"; };
+		27CEEB0C1EB61CB200BD57D5 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				27CEEAF01EB608A400BD57D5 /* ShoeDetailTableViewController.swift */,
+				27CEEB081EB60EA300BD57D5 /* ShoeImageViewController.swift */,
 			);
 			name = Detail;
 			sourceTree = "<group>";
@@ -185,7 +190,8 @@
 		27CEEAFE1EB60BD900BD57D5 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				27CEEAFC1EB60BD500BD57D5 /* FeedTableViewController.swift */,
+				27CEEB0A1EB60F2D00BD57D5 /* FeedShoeTableViewCell.swift */,
+				27CEEB0C1EB61CB200BD57D5 /* FeedTableViewController.swift */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -338,10 +344,12 @@
 				27CEEAFA1EB60AFD00BD57D5 /* Shoe.swift in Sources */,
 				27CEEB021EB60D8E00BD57D5 /* ShoeDetailCell.swift in Sources */,
 				27CEEAF11EB608A400BD57D5 /* ShoeDetailTableViewController.swift in Sources */,
-				27CEEAFD1EB60BD500BD57D5 /* FeedTableViewController.swift in Sources */,
+				27CEEB091EB60EA300BD57D5 /* ShoeImageViewController.swift in Sources */,
 				27201CDE1EB16FB200E07342 /* ViewController.swift in Sources */,
 				27CEEB051EB60E0300BD57D5 /* SuggestionCollectionViewCell.swift in Sources */,
 				27201CDC1EB16FB200E07342 /* AppDelegate.swift in Sources */,
+				27CEEB0D1EB61CB200BD57D5 /* FeedTableViewController.swift in Sources */,
+				27CEEB0B1EB60F2D00BD57D5 /* FeedShoeTableViewCell.swift in Sources */,
 				27CEEB071EB60E1900BD57D5 /* SuggestionTableViewCell.swift in Sources */,
 				27CEEAF51EB60A3F00BD57D5 /* CheckoutTableViewController.swift in Sources */,
 				27CEEB001EB60D5100BD57D5 /* ShoppingBagTableViewController.swift in Sources */,

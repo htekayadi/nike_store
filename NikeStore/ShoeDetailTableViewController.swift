@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ShoeDetailTableViewController : UITableViewController
-{
+class ShoeDetailTableViewController : UITableViewController {
     var shoe: Shoe!
     
     override func viewDidLoad() {
@@ -116,10 +115,5 @@ extension ShoeDetailTableViewController : UICollectionViewDelegate, UICollection
         return CGSize(width: itemWidth, height: itemWidth)
     }
 }
-
-
-
-
-
 
 
