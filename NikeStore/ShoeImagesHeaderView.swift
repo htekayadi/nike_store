@@ -13,15 +13,11 @@ class ShoeImagesHeaderView: UIView {
 }
 
 extension ShoeImagesHeaderView : ShoeImagesPageViewControllerDelegate {
-    func setupPageController(numberOfPages: Int)
-    {
+    func setupPageController(numberOfPages: Int) {
         pageControl.numberOfPages = numberOfPages
     }
     
-    func turnPageController(to index: Int)
-    {
+    func turnPageController(to index: Int) {
         pageControl.currentPage = index
     }
 }
-
-

@@ -727,7 +727,7 @@
         <!--Shoe Detail Table View Controller-->
         <scene sceneID="6JL-8u-Xv1">
             <objects>
-                <tableViewController id="bkA-Sx-ZrF" customClass="ShoeDetailTableViewController" sceneMemberID="viewController">
+                <tableViewController id="bkA-Sx-ZrF" customClass="ShoeDetailTableViewController" customModule="NikeStore" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" id="mSl-Es-RoT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -745,7 +745,7 @@
                                 <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yW5-Bd-bQN">
                                     <rect key="frame" x="0.0" y="-135" width="375" height="375"/>
                                     <connections>
-                                        <segue destination="7Bu-O0-zIA" kind="embed" identifier="ShowImagesPageViewController" id="ACm-pY-nK5"/>
+                                        <segue destination="7Bu-O0-zIA" kind="embed" identifier="ShowImagesPageViewController" id="20i-od-vwf"/>
                                     </connections>
                                 </containerView>
                             </subviews>
@@ -925,6 +925,9 @@
                     </tableView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="shoeImagesHeaderView" destination="0To-oj-CcO" id="KDW-7b-RVe"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4u-Xy-Tff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
