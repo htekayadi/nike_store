@@ -731,9 +731,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="pIF-FN-myf">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <segue destination="7Bu-O0-zIA" kind="embed" id="i2a-dW-B1Q"/>
+                            </connections>
+                        </containerView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoeDetailCell" rowHeight="173" id="RWi-3M-FR5" customClass="ShoeDetailCell" customModule="NikeStore" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="173"/>
+                                <rect key="frame" x="0.0" y="403" width="375" height="173"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RWi-3M-FR5" id="Ab0-gu-qOQ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
@@ -768,7 +775,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyButtonCell" rowHeight="65" id="cpM-j3-ps2">
-                                <rect key="frame" x="0.0" y="201" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="576" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cpM-j3-ps2" id="spL-Fp-bX3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
@@ -801,7 +808,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProductDetailsCell" rowHeight="53" id="41W-Qu-HNL">
-                                <rect key="frame" x="0.0" y="266" width="375" height="53"/>
+                                <rect key="frame" x="0.0" y="641" width="375" height="53"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="41W-Qu-HNL" id="JMS-0J-WII">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="52.5"/>
@@ -822,7 +829,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuggestionCell" rowHeight="443" id="IJL-6d-r4g" customClass="Sho">
-                                <rect key="frame" x="0.0" y="319" width="375" height="443"/>
+                                <rect key="frame" x="0.0" y="694" width="375" height="443"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IJL-6d-r4g" id="lBl-bz-EtT">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="442.5"/>
@@ -899,6 +906,45 @@
             </objects>
             <point key="canvasLocation" x="2374" y="-1168"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="91s-8R-Sqm">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="7Bu-O0-zIA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8a-un-15D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3156" y="-1320"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kr4-YA-zQ2">
+            <objects>
+                <viewController id="4tv-IB-vUm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eB4-7f-vFY"/>
+                        <viewControllerLayoutGuide type="bottom" id="7BQ-Wr-pG7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JaU-48-L4o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t1" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-49-dyG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cb2-49-dyG" firstAttribute="leading" secondItem="JaU-48-L4o" secondAttribute="leading" id="3D9-5c-KRH"/>
+                            <constraint firstItem="7BQ-Wr-pG7" firstAttribute="top" secondItem="Cb2-49-dyG" secondAttribute="bottom" id="6jg-tU-hJ7"/>
+                            <constraint firstItem="7BQ-Wr-pG7" firstAttribute="top" secondItem="Cb2-49-dyG" secondAttribute="bottom" id="LsM-gf-H0f"/>
+                            <constraint firstAttribute="trailing" secondItem="Cb2-49-dyG" secondAttribute="trailing" id="TEi-r9-7d1"/>
+                            <constraint firstItem="Cb2-49-dyG" firstAttribute="top" secondItem="JaU-48-L4o" secondAttribute="top" id="yTV-A6-zgN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmz-pd-JTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3813.5999999999999" y="-1189.6551724137933"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icon-bag-filled" width="25" height="25"/>
@@ -906,5 +952,6 @@
         <image name="icon-nike-filled" width="25" height="25"/>
         <image name="icon-plus" width="25" height="25"/>
         <image name="s1" width="1242" height="1242"/>
+        <image name="t1" width="1242" height="1242"/>
     </resources>
 </document>
