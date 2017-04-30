@@ -914,10 +914,10 @@
             </objects>
             <point key="canvasLocation" x="3156" y="-1320"/>
         </scene>
-        <!--View Controller-->
+        <!--Shoe Image View Controller-->
         <scene sceneID="Kr4-YA-zQ2">
             <objects>
-                <viewController id="4tv-IB-vUm" sceneMemberID="viewController">
+                <viewController id="4tv-IB-vUm" customClass="ShoeImageViewController" customModule="NikeStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eB4-7f-vFY"/>
                         <viewControllerLayoutGuide type="bottom" id="7BQ-Wr-pG7"/>
@@ -940,6 +940,9 @@
                             <constraint firstItem="Cb2-49-dyG" firstAttribute="top" secondItem="JaU-48-L4o" secondAttribute="top" id="yTV-A6-zgN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Cb2-49-dyG" id="35O-3C-LJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmz-pd-JTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
