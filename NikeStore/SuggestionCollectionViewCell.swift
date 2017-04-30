@@ -6,10 +6,9 @@
 //  Copyright © 2017 htekayadi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class SuggestionCollectionViewCell : UICollectionViewCell
-{
+class SuggestionCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     var image: UIImage! {

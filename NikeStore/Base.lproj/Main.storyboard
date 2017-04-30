@@ -861,7 +861,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="jEr-ac-ugl" secondAttribute="bottom" id="pa6-sb-FID"/>
                                                     </constraints>
                                                     <connections>
-                                                        <outlet property="imageView" destination="jEr-ac-ugl" id="7Xi-rN-6eE"/>
+                                                        <outlet property="imageView" destination="jEr-ac-ugl" id="R32-Ov-ECG"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>

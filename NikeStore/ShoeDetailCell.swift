@@ -6,10 +6,10 @@
 //  Copyright © 2017 htekayadi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ShoeDetailCell: UITableViewCell {
-    
+
     @IBOutlet weak var shoeNameLabel: UILabel!
     @IBOutlet weak var shoeDescriptionLabel: UILabel!
     

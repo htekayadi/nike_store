@@ -6,10 +6,9 @@
 //  Copyright © 2017 htekayadi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class SuggestionTableViewCell : UITableViewCell
-{
+class SuggestionTableViewCell: UITableViewCell {
+
     @IBOutlet weak var collectionView: UICollectionView!
-    
 }
