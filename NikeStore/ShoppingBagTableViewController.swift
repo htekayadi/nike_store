@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ShoppingBagTableViewController: UITableViewController
-{
+class ShoppingBagTableViewController: UITableViewController {
     struct Storyboard {
         static let numberOfItemsCell = "numberOfItemsCell"      // cell 0
         static let itemCell = "itemCell"                        // cell 1
@@ -72,5 +71,34 @@ extension ShoppingBagTableViewController
             cell.shoe = shoes[indexPath.row - 1]
             return cell
         }
+    }
+}
+
+class NumberOfItemsCell: UITableViewCell
+{
+    @IBOutlet weak var numberOfItemsLabel: UILabel!
+}
+
+class ShoppingCartItemCell : UITableViewCell
+{
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var removeButton: UIButton!
+    
+    var shoe: Shoe! {
+        didSet {
+            self.updateUI()
+        }
+    }
+    
+    func updateUI()
+    {
+        productImageView.image = shoe.images?.first
+        productNameLabel.text = shoe.name
+        productPriceLabel.text = "$\(shoe.price!)"
+    }
+    
+    @IBAction func removeButtonDidTap(_ sender: Any) {
     }
 }
